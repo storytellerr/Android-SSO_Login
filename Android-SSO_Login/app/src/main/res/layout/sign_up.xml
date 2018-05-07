@@ -1,0 +1,69 @@
+<LinearLayout
+    android:padding="30dp"
+    android:background="#413e4f"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <EditText
+        android:id="@+id/displayName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="name"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/emailRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/passwordRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/Age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="@android:color/white" />
+
+
+    <Button
+        android:id="@+id/registerActionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/mybutton"
+        android:text="register" />
+
+    <TextView
+        android:id="@+id/goback"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Already a member? Login"
+        android:textSize="16dp" />
+    </LinearLayout>

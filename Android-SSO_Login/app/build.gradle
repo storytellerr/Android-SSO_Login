@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "27.0.3"
+    defaultConfig {
+        applicationId "com.example.storytellerr.android_sso_login"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:27.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'androidx.core:core-ktx:0.2'
+    implementation 'com.google.firebase:firebase-database:11.0.0'
+    implementation 'com.google.firebase:firebase-auth:11.0.0'
+
+}
+apply plugin: 'com.google.gms.google-services'

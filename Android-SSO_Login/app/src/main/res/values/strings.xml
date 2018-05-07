@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Android-SSO_Login</string>
+    <string name="textdata">will receive following:your email,name,status,age</string>
+</resources>
